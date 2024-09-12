@@ -1,13 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/css/reset.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="container">
+        <article class="article">
+          <div class="article-heading-container">
+            <h2 class="article-heading">Register</h2>
+          </div>
+          <p class="article-text">
+            Create your account. It's free and only takes a minute.
+          </p>
+
+          <form class="form">
+            <div class="fullname-container">
+              <input
+                type="text"
+                name="firstname"
+                placeholder="First Name"
+                pattern="[A-Za-z0-9]{7,31}"
+                required
+                class="input"
+              />
+              <input
+                type="text"
+                name="lastname"
+                placeholder="Last Name"
+                pattern="[A-Za-z0-9]{7,31}"
+                required
+                class="input"
+              />
+            </div>
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              autocomplete="email"
+              required
+              class="input"
+            />
+            <input
+              type="password"
+              name="password"
+              placeholder="Password"
+              autocomplete="new-password"
+              required
+              class="input"
+            />
+            <input
+              type="password"
+              name="confirm-password"
+              placeholder="Confirm Password"
+              required
+              class="input"
+            />
+            <label class="label-terms-of-use">
+              <input type="checkbox" name="agreed-to-terms" required checked />
+              <p>
+                I accept the <a href="#" class="terms-of-use-link">Terms of Use</a> &
+                <a href="#" class="terms-of-use-link">privacy Policy</a>.
+              </p>
+            </label>
+            <button type="submit" class="form-button">Register Now</button>
+          </form>
+        </article>
+      </div>
+    </main>
+  </body>
 </html>
